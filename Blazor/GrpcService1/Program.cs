@@ -19,7 +19,7 @@ var app = builder.Build();
 app.UseDefaultFiles();
 app.UseStaticFiles();
 app.UseRouting();
-
+app.UseGrpcWeb();
 app.UseCors("AllowAll");
 
 // Configure the HTTP request pipeline.

@@ -1,4 +1,4 @@
-﻿@page "/fetchdata"
+﻿@page "/fetchdatathirdparty"
 @inject IConfiguration Config
 @inject NavigationManager Nav
 @using Google.Protobuf.WellKnownTypes
@@ -51,9 +51,7 @@ else
     {
         // Get the service address from appsettings.json
         
-        
-
-        var backendUrl = Nav.BaseUri;
+        var backendUrl = "http://localhost:5243";
 
         // Create a channel with a GrpcWebHandler that is addressed to the backend server.
         //
