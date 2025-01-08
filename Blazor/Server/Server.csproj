@@ -10,8 +10,8 @@
     <Protobuf Include="..\Proto\count.proto" GrpcServices="Server" Link="Protos\count.proto" />
 
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" />
-    <PackageReference Include="Grpc.AspNetCore" Version="2.64.0"/>
-    <PackageReference Include="Grpc.AspNetCore.Web" Version="2.67.0"/>
+    <PackageReference Include="Grpc.AspNetCore" />
+    <PackageReference Include="Grpc.AspNetCore.Web" />
   </ItemGroup>
 
   <ItemGroup>

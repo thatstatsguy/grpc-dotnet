@@ -47,10 +47,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        Console.WriteLine("getting data");
         var client = new WeatherForecasts.WeatherForecastsClient(Channel);
-        var data = await client.GetWeatherForecastsAsync(new Empty());
-        Console.WriteLine("Got data");
-        forecasts = data.Forecasts;
+        forecasts = (await client.GetWeatherForecastsAsync(new Empty())).Forecasts;
     }
 }
