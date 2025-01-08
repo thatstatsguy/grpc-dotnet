@@ -1,2 +1,0 @@
-obj\Debug\net9.0/Count.cs \
-obj\Debug\net9.0/CountGrpc.cs: ../Proto/count.proto
